@@ -16,8 +16,9 @@
     <title>Restaurant Delizia</title>
 </head>
 <body>
+
     
-    <nav class="navbar navbar-expand-lg navbar-dark text-white" style="background-color: #35682d">
+    <nav class="navbar navbar-expand-lg navbar-dark text-white">
         <div class="container-fluid px-3 mx-3">
         <a class="logo navbar-brand" href="#">Delizia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,10 +40,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="promo secreta">
+          </div>
+          <div class="carousel-item">
             <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="pizza 2x1">
           </div>
           <div class="carousel-item">
-            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="pinguino">
+            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="promo Mach">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -59,7 +63,7 @@
 
           <!--Sección plato del día-->
           <section>
-            <div id="deldia" class="deldia row mx-auto text-center">
+            <div id="deldia" class="deldia row mx-auto text-center bg-white">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <h3 class="titulop container-fluid py-2 pt-4">DELIZIA DEL DIA</h3>
                   <p class="parrafo1 pt-2 pb-2 px-4">Bruschetta con tomates cherry</p>
@@ -74,7 +78,7 @@
         <!--Sección Carta gastronomica-->
 
 <section>
-    <div id="cg" class=" container-fluid pb-5">
+    <div id="cg" class=" container-fluid pb-5 bg-white">
         <div class="row">
             <h3 class="titulos py-2 text-center text-white pt-2">GASTRONOMIA ITALIANA</h3>
             <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
@@ -260,7 +264,7 @@
         <!--Sección Carta pizzas-->
 
         <section>
-            <div id="pizzas" class=" container-fluid pb-5">
+            <div id="pizzas" class=" container-fluid pb-5 bg-white">
                 <div class="row">
                     <h3 class="titulos py-2 text-center text-white pt-2">PIZZAS</h3>
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
@@ -374,8 +378,9 @@
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="card">
-                        <img src="assets/img/cupon-31.jpg" class="card-img-top" alt="Pizza Pepperoni">
+                        <div class="card" id="pepe">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/img/cupon-31.jpg" class="card-img-top"  alt="Pizza Pepperoni"></a>
                             <div class="card-body text-center">
                             <h2 class="card-title">Pepperoni</h2>
                                 <div class="valor">
@@ -419,7 +424,7 @@
     </div>
 </section>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid bg-white">
         <div class="row">
             <div class="footer text-center mt-4">
                 <a class="logo text-black" href="#">Delizia</a>
@@ -427,7 +432,19 @@
             </div>
         </div>
     </footer>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <img src="assets/img/Misterio.jpg" class="misterio w-100" alt="secreto">
+        </div>
+      </div>
+    </div>
+  </div>
     
+    <script src="assets/js/delizia.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/360cd4ba7a.js" crossorigin="anonymous"></script> <!--con el scrip pude integrar los iconos-->
 </body>

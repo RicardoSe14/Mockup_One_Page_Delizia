@@ -1,5 +1,8 @@
 body{font-family: 'Lato' !important;
-    
+    z-index: 1;
+    position: absolute;
+    background-color: white !important;
+    padding: 0 !important;
 }
 
 .logo {
